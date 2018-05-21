@@ -17,8 +17,8 @@ logging:
   level:
     org.springframework.security: DEBUG
 
- Datasource and JPA configuration to be used for storing the OAuth authorization details
- and token store
+# Datasource and JPA configuration to be used for storing the OAuth authorization details
+# and token store
 spring:
   datasource:
     url: jdbc:mysql://mysqldb:3306/auth
@@ -32,16 +32,6 @@ spring:
     hibernate:
       ddl-auto: create
 
-#spring:
-#  data:
-#    mongodb:
-#      host: 127.0.0.1
-#      port: 27017
-#      database: oauth
-#      username: cd2
-#      password: cd2
-#  jackson:
-#    property-naming-strategy: SNAKE_CASE
 ---
 
 spring:
@@ -49,7 +39,7 @@ spring:
 # Datasource and JPA configuration to be used for storing the OAuth authorization details
 # and token store
   datasource:
-    url: jdbc:mysql://172.18.0.5:3306/auth
+    url: jdbc:mysql://172.18.0.2:3306/auth
     username: root
     password: admin
     driver-class: com.mysql.jdbc.Driver
