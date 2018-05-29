@@ -45,6 +45,17 @@ spring:
   profiles: docker
 # Datasource and JPA configuration to be used for storing the OAuth authorization details
 # and token store
+
+spring:
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: oauth
+      username: cd2
+      password: cd2
+
+
 #  datasource:
 #    url: jdbc:mysql://172.18.0.2:3306/auth
 #    username: root
