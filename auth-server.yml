@@ -46,13 +46,17 @@ spring:
 # Datasource and JPA configuration to be used for storing the OAuth authorization details
 # and token store
 
+spring:
   data:
     mongodb:
-      host: mongodb
+      host: 52.57.210.172
       port: 27017
-      database: oauth
-      username: cd2
-      password: cd2
+      database: aucobo
+      username: aucoborw
+      password: yemnofomm0!blub
+      authentication-database: admin
+      repositories:
+        enabled: true
 
 
 #  datasource:
