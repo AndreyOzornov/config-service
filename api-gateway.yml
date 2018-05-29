@@ -44,8 +44,8 @@ security:
     client:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
       userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
-      clientId: acme
-      clientSecret: acmesecret
+      clientId: client
+      clientSecret: clientsecret
       registered-redirect-uri: http://localhost:8765/login
       pre-established-redirect-uri: http://localhost:8765/login
       use-current-uri: false
