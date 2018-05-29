@@ -48,7 +48,7 @@ spring:
 
   data:
     mongodb:
-      host: 127.0.0.1
+      host: 192.168.0.126
       port: 27017
       database: oauth
       username: cd2
